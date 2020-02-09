@@ -3,7 +3,6 @@ package com.shtramak.ecommerce.model;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.data.rest.core.annotation.RestResource;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -17,7 +16,6 @@ import javax.persistence.Table;
 @EqualsAndHashCode(of = "id")
 @Entity
 @Table(name = "product_category")
-@RestResource(path = "product-categories")
 public class ProductCategory {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
